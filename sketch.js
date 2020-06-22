@@ -7,7 +7,7 @@ const Body = Matter.Body;
 function preload(){}
 
 function setup() {
-	createCanvas(800, 700);
+	createCanvas(1200, 700);
 	canvas.shapeColor = color(0)
 
 	engine = Engine.create();
@@ -36,7 +36,7 @@ function draw() {
   bob2.display();
   bob3.display();
   bob4.display();
-  bob5.display();
+ bob5.display();
   ground.display();
   hanger.display();
   rope1.display();
