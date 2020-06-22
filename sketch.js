@@ -14,11 +14,11 @@ function setup() {
 	world = engine.world;
 
 	Engine.run(engine);
-	bob1 = new Bob(300,400,50);
-	bob2 = new Bob(350,400,50);
+	bob1 = new Bob(200,400,50);
+	bob2 = new Bob(300,400,50);
 	bob3 = new Bob(400,400,50);
-	bob4 = new Bob(450,400,50);
-	bob5 = new Bob(500,400,50);
+	bob4 = new Bob(500,400,50);
+	bob5 = new Bob(600,400,50);
 	ground = new Ground(width/2,height,width,100,);
 	hanger = new Ground(width/2,height-500,300,50);
 	rope1 = new Rope(bob1.body,hanger.body,-bobDiameter*2,0);
@@ -44,14 +44,11 @@ function draw() {
   rope3.display();
   rope4.display();
   rope5.display();
-  KeyPressed();
   drawSprites(); 
   }
 
-  function KeyPressed(){
-	if (keyDown === UP_ARROW){
-		Matter.Body.ApplyForce(bob1.body,bob1.body.position,{x:85,y:-85});
+  /*function KeyPressed(){
+	if (keyCode === UP_ARROW){
+		Matter.Body.applyForce(bob1.body,bob1.body.position={x:8,y:0});
 	}
-  }
-
-
+  }*/
