@@ -22,7 +22,7 @@ class Rope{
          var Anchor1X=PointA.x
          var Anchor1Y=PointA.y
 
-         var Anchor2X=PointA.x
+         var Anchor2X=pointB.x+this.offsetX
          var Anchor2Y=pointB.y+this.offsetY
 
 
